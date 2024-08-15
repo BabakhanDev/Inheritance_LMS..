@@ -1,6 +1,20 @@
 public class Person {
-    private String name;
-    private String designation;
+    protected String name;
+   protected String designation;
+
+
+    public Person() {
+    }
+
+    public Person(String name, String designation) {
+        this.name = name;
+        this.designation = designation;
+    }
+    public void  method (){
+        System.out.println(name+" - Окуп жатат \n" +
+                name+" - басып жатат\n" +
+                name+" - тамактанып жатат");
+    }
 
     public String getName() {
         return name;
@@ -19,18 +33,6 @@ public class Person {
     public void setDesignation(String designation) {
         this.designation = designation;
 
-    }
-    public Person() {
-    }
-
-    public Person(String name, String designation) {
-        this.name = name;
-        this.designation = designation;
-    }
-    public String method (){
-        return ("Learn().\n" +
-                "Walk().\n" +
-                "Eat().");
     }
 
     @Override
