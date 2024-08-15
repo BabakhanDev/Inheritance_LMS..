@@ -7,11 +7,18 @@ public class Main {
         Dancer dancer = new Dancer("Sophia","Dancing().","KG312");
         Singer singer = new Singer("OMA","Singing().","Muras");
 
-        System.out.println(programmer+"\n"+programmer.method()+"\n"+programmer.getDesignation());
-        System.out.println(" ");
-        System.out.println(dancer+"\n"+dancer.method()+"\n"+dancer.getDesignation());
-        System.out.println(" ");
-        System.out.println(singer+"\n"+singer.method()+"\n"+singer.getDesignation());
+        System.out.println(programmer);
+        programmer.method();
+        programmer.coding();
+        System.out.println("..................................");
+        System.out.println(dancer);
+        dancer.method();
+        dancer.dancing();
+        System.out.println(" .................................");
+        System.out.println(singer);
+        singer.method();
+        singer.singing();
+        System.out.println(" .................................");
 
     }
 }
